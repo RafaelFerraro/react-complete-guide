@@ -1,16 +1,17 @@
-import ExpenseItem from "./ExpenseItem";
+import ExpenseItem from "./ExpenseItem.js";
+import Card from "./Card.js";
 import "./Expenses.css";
 
 function Expenses(props) {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       {props.expenses.map((expense) => {
         return <ExpenseItem
           title={expense.title}
           amount={expense.amount}
           date={expense.date}/>
       })};
-    </div>
+    </Card>
   );
 };
 
