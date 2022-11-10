@@ -1,6 +1,6 @@
 import './Card.css'
 
-function Card(props) {
+const Card = (props) => {
   /*
     className is a reserved name which is used to access the classes
     that were passed when calling the component
