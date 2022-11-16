@@ -9,9 +9,14 @@ const App = () => {
     {title:  'Supermarket', amount: 80.35, date: new Date(2022, 10, 18)}
   ];
 
+  const saveExpenseData = (expenseData) => {
+    console.log("A new expense was added");
+    console.log(expenseData);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onSaveExpenseData={saveExpenseData}/>
       <Expenses expenses={expenses}/>
     </div>
   );
