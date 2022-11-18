@@ -3,10 +3,10 @@ import Expenses from "./components/Expenses/Expenses.js";
 import NewExpense from "./components/NewExpense/NewExpense.js";
 
 const INITIAL_EXPENSES = [
-  {title:  'Car Insurance', amount: 299.99, date: new Date(2021, 10, 10)},
-  {title:  'Dinner', amount: 20.99, date: new Date(2021, 11, 10)},
-  {title:  'Paris tickets', amount: 400, date: new Date(2022, 10, 10)},
-  {title:  'Supermarket', amount: 80.35, date: new Date(2022, 10, 18)}
+  {id: "1", title:  'Car Insurance', amount: 299.99, date: new Date(2021, 10, 10)},
+  {id: "2", title:  'Dinner', amount: 20.99, date: new Date(2021, 11, 10)},
+  {id: "3", title:  'Paris tickets', amount: 400, date: new Date(2022, 10, 10)},
+  {id: "4", title:  'Supermarket', amount: 80.35, date: new Date(2022, 10, 18)}
 ];
 
 const App = () => {
