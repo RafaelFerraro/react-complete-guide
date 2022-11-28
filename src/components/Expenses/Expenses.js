@@ -9,6 +9,7 @@ const Expenses = (props) => {
 
   const filterExpenses = (year) => {
     setFilteredYear(year)
+    props.onFilterExpensesChanges(year);
   }
 
   return (
