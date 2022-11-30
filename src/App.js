@@ -11,13 +11,6 @@ const INITIAL_EXPENSES = [
 
 const App = () => {
   const [expenses, setExpenses] = useState(INITIAL_EXPENSES);
-  const [filteredExpenses, setFilteredExpenses] = useState(expenses);
-
-  const filterExpenses = (filteredYear) => {
-    setFilteredExpenses(
-      expenses.filter(expense => parseInt(expense.date.getFullYear()) === parseInt(filteredYear))
-    );
-  };
 
   const saveExpenseData = (expenseData) => {
     /*
@@ -32,7 +25,7 @@ const App = () => {
   return (
     <div>
       <NewExpense onSaveExpenseData={saveExpenseData}/>
-      <Expenses items={filteredExpenses} onFilterExpensesChanges={filterExpenses}/>
+      <Expenses items={expenses}/>
     </div>
   );
 }
