@@ -24,7 +24,6 @@ const NewExpense = (props) => {
   return (
     <div className='new-expense'>
       {showExpenseForm ? <ExpenseForm onSaveExpenseData={saveExpenseData} onCancelClick={handleShowExpenseForm}/> : showButtonOnly}
-
     </div>
   )
 }
